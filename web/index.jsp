@@ -1,6 +1,6 @@
 <%--
   Created by IntelliJ IDEA.
-  User: nicolas
+  object.User: nicolas
   Date: 26/03/2020
   Time: 00:20
   To change this template use File | Settings | File Templates.
@@ -11,6 +11,6 @@
   <title>$Title$</title>
 </head>
 <body>
-$ENDggg$
+$END$
 </body>
 </html>

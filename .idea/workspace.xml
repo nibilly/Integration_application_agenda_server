@@ -6,19 +6,35 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1c4ab608-e109-4747-bc13-8ac7fe70b599" name="Default Changelist" comment="" />
+    <list default="true" id="1c4ab608-e109-4747-bc13-8ac7fe70b599" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Agenda5.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Agenda5.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Event.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Home.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MyApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rest/MyApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/index.jsp" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JUnit4 Test Class" />
+        <option value="package-info" />
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
@@ -28,20 +44,28 @@
     <option name="CUSTOM_FILTER" />
   </component>
   <component name="ProjectId" id="1ZdelDAjGYxkTV6vAnbyUS6ox0x" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="GenerateAntBuildDialog.backupFiles" value="true" />
+    <property name="GenerateAntBuildDialog.enableUiFormCompile" value="true" />
+    <property name="GenerateAntBuildDialog.forceTargetJdk" value="true" />
+    <property name="GenerateAntBuildDialog.outputFileNameProperty" value="agenda5" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="create.test.in.the.same.root" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Integration Application 3 tp-iae-master" />
-    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../GitCédric/integrationApplication" />
+    <property name="project.structure.last.edited" value="Global Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
@@ -52,6 +76,9 @@
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\nicolas\Documents\IntegrationApplication\Agenda5\src\object" />
     </key>
   </component>
   <component name="RunManager" selected="GlassFish Server.GlassFish 5.0.0">
@@ -183,6 +210,10 @@
       <workItem from="1587145333587" duration="81000" />
       <workItem from="1587146025586" duration="899000" />
       <workItem from="1587223761572" duration="5854000" />
+      <workItem from="1587975338225" duration="18854000" />
+      <workItem from="1588019635314" duration="356000" />
+      <workItem from="1588066042782" duration="12273000" />
+      <workItem from="1588153850696" duration="7220000" />
     </task>
     <servers />
   </component>
@@ -194,10 +225,18 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="168" key="#BuildArtifactsBeforeRunChooser/0.0.1366.728@0.0.1366.728" timestamp="1587223941992" />
-    <state x="400" y="22" key="#Build_agenda_war" timestamp="1587224024720">
+    <state x="400" y="22" key="#Build_agenda_war" timestamp="1587978849169">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="400" y="22" key="#Build_agenda_war/0.0.1366.728@0.0.1366.728" timestamp="1587224024720" />
+    <state x="400" y="22" key="#Build_agenda_war/0.0.1366.728@0.0.1366.728" timestamp="1587978849169" />
+    <state x="0" y="25" key="#Inspections" timestamp="1587977309808">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="0" y="25" key="#Inspections/0.0.1366.728@0.0.1366.728" timestamp="1587977309808" />
+    <state x="275" y="22" key="#Project_Structure" timestamp="1588085502738">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="275" y="22" key="#Project_Structure/0.0.1366.728@0.0.1366.728" timestamp="1588085502738" />
     <state x="137" y="18" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1587224069615">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -206,10 +245,14 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="473" y="216" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1366.728@0.0.1366.728" timestamp="1587223981836" />
-    <state x="463" y="118" key="FileChooserDialogImpl" timestamp="1587224945779">
+    <state x="413" y="110" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1588174871387">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="463" y="118" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1587224945779" />
+    <state x="413" y="110" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1588174871387" />
+    <state x="463" y="118" key="FileChooserDialogImpl" timestamp="1588154175003">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="463" y="118" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1588154175003" />
     <state width="905" height="196" key="GridCell.Tab.0.bottom" timestamp="1587145424144">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
