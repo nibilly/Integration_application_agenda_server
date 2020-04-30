@@ -7,14 +7,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1c4ab608-e109-4747-bc13-8ac7fe70b599" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Agenda5.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Agenda5.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Event.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Home.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MyApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rest/MyApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/rest/AgendaRest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/rest/AgendaRest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +59,7 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="create.test.in.the.same.root" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../GitCédric/integrationApplication" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Message" />
     <property name="project.structure.last.edited" value="Global Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -213,7 +208,9 @@
       <workItem from="1587975338225" duration="18854000" />
       <workItem from="1588019635314" duration="356000" />
       <workItem from="1588066042782" duration="12273000" />
-      <workItem from="1588153850696" duration="7220000" />
+      <workItem from="1588153850696" duration="7628000" />
+      <workItem from="1588179615580" duration="8874000" />
+      <workItem from="1588241296938" duration="9437000" />
     </task>
     <servers />
   </component>
@@ -245,14 +242,18 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="473" y="216" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1366.728@0.0.1366.728" timestamp="1587223981836" />
+    <state x="531" y="252" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1588242941149">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="531" y="252" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1366.728@0.0.1366.728" timestamp="1588242941149" />
     <state x="413" y="110" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1588174871387">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="110" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1588174871387" />
-    <state x="463" y="118" key="FileChooserDialogImpl" timestamp="1588154175003">
+    <state x="463" y="118" key="FileChooserDialogImpl" timestamp="1588268996673">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="463" y="118" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1588154175003" />
+    <state x="463" y="118" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1588268996673" />
     <state width="905" height="196" key="GridCell.Tab.0.bottom" timestamp="1587145424144">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -309,6 +310,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="454" y="66" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1366.728@0.0.1366.728" timestamp="1585176346146" />
+    <state x="413" y="143" key="extract.method.dialog" timestamp="1588241581541">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="413" y="143" key="extract.method.dialog/0.0.1366.728@0.0.1366.728" timestamp="1588241581541" />
     <state x="65" y="0" key="new project wizard" timestamp="1585178423490">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

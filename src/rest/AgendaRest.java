@@ -1,8 +1,8 @@
 package rest;
 
+import object.Event;
 import object.User;
 import object.UserManagement;
-import object.Event;
 
 import javax.ws.rs.*;
 import java.util.List;
@@ -60,8 +60,19 @@ public class AgendaRest {
     @GET
     @Path("{userId}/event")
     public String getEvents(@PathParam("userId") int userId){
+        StringBuilder stringBuilder = new StringBuilder();
         List<Event> events = UserManagement.getUserById(userId).getMonAgenda().getEvents();
-        return eventsToString(events);
+        events.sort(new EventComparator());
+        if(events.size() != 0) {
+            for (Event event : events) {
+                stringBuilder.append("<tr><td class=\"agenda-date\" class=\"active\" rowspan=\"1\">");
+                stringBuilder.append("<div class=\"dayofmonth\">"+event.getJourDate().substring(0,2)+"</div>");
+                stringBuilder.append("<div class=\"dayofweek\">" + event.getJourDate().substring(2) + "</div></td>");
+                stringBuilder.append("<td class=\"agenda-time\">" + event.getHeureDebut() + " - " + event.getHeureFin() + "</td>");
+                stringBuilder.append("<td class=\"agenda-events\"><div class=\"agenda-event\">(id : " + event.getId() + ") " + event.getName() + "</td></tr>");
+            }
+        }
+        return stringBuilder.toString();
     }
 
     @POST
@@ -81,6 +92,7 @@ public class AgendaRest {
 
     @GET
     @Path("{userId}/event/day")
+    @Produces("text/html")
     public String getEventsByDay(@PathParam("userId") int userId, @QueryParam("date") String date){
         date = date.toUpperCase();
         List<Event> events = UserManagement.getUserById(userId).getMonAgenda().getEvents();
@@ -88,6 +100,43 @@ public class AgendaRest {
         String finalDate = date;
         events = events.stream().filter(event -> event.getJourDate().equals(finalDate)).collect(Collectors.toList());
         return eventsToString(events);
+    }
+
+    @GET
+    @Path("event/day")
+    @Produces("application/json")
+    public String getEventsByDayJson(@QueryParam("date") String date){
+        StringBuilder stringBuilder = new StringBuilder();
+        date = date.toUpperCase();
+        date = date.substring(0, 10);
+        String finalDate = date;
+        stringBuilder.append("{ \"users\": [ ");
+        int cptUser = 0;
+        int cptEvent = 0;
+        for (User user: UserManagement.listUser){
+            String finalDate1 = date;
+            List<Event> events = user.getMonAgenda().getEvents().stream().filter(event -> event.getJourDate().compareTo(finalDate1) == 0).collect(Collectors.toList());
+            if(!events.isEmpty()) {
+                cptEvent = 0;
+                if (cptUser++>0) stringBuilder.append(", ");
+                stringBuilder.append("{ \"user\": { ");
+                stringBuilder.append("\"firstName\": \"").append(user.getFirstName()).append("\", ");
+                stringBuilder.append("\"lastName\": \"").append(user.getLastName()).append("\" ");
+                stringBuilder.append(" }, ");
+                stringBuilder.append("\"events\": [ ");
+                for (Event event : events) {
+                    cptEvent++;
+                    stringBuilder.append("{ \"startDate\": \"").append(event.getStartDate()).append("\", ");
+                    stringBuilder.append("\"finishDate\": \"").append(event.getFinishDate()).append("\", ");
+                    stringBuilder.append("\"name\": \"").append(event.getName()).append("\" ");
+                    stringBuilder.append(" }");
+                    if (events.size() != cptEvent) stringBuilder.append(", ");
+                }
+                stringBuilder.append(" ] } ");
+            }
+        }
+        stringBuilder.append(" ] } ");
+        return stringBuilder.toString();
     }
 
     @DELETE
